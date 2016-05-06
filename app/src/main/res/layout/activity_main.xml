@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.amap.api.maps.MapView
+            android:id="@+id/map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </com.amap.api.maps.MapView>
+    </FrameLayout>
+
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/your_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="50dp"
+        android:hint="请输入你的位置"
+        android:textSize="17sp"
+        app:met_baseColor="@android:color/black"
+        app:met_clearButton="true"
+        app:met_floatingLabel="highlight"
+        app:met_maxCharacters="20"
+        app:met_primaryColor="@android:color/holo_red_light"
+        app:met_singleLineEllipsis="true"
+        android:visibility="invisible"/>
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/black_heart_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/your_location"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="请输入黑心医院"
+        android:textSize="17sp"
+        app:met_baseColor="@android:color/black"
+        app:met_clearButton="true"
+        app:met_floatingLabel="highlight"
+        app:met_maxCharacters="20"
+        app:met_primaryColor="@android:color/holo_red_light"
+        app:met_singleLineEllipsis="true"
+        android:visibility="invisible"/>
+
+    <ListView
+        android:id="@+id/hospital_list"
+        android:layout_below="@id/black_heart_location"
+        android:layout_width="match_parent"
+        android:background="@android:color/white"
+        android:layout_height="wrap_content">
+    </ListView>
+
+    <Button
+        android:id="@+id/gotoHospital"
+        android:layout_below="@id/black_heart_location"
+        android:text="点击前往"
+        android:background="@drawable/btn_shape"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+</RelativeLayout>
