@@ -4,7 +4,8 @@
 
 #### 后期提供添加医院信息和添加医院功能。
 
-#### 下载云盘 ：http://pan.baidu.com/s/1eSdiOls
+#### 下载链接 https://play.google.com/store/apps/details?id=com.neu.blackheartedhospital
+
 
 
 
