@@ -6,6 +6,8 @@
 
 #### 下载链接 https://play.google.com/store/apps/details?id=com.neu.blackheartedhospital
 
+#### 百度云链接 http://pan.baidu.com/s/1eSdiOls
+
 
 
 
